@@ -195,6 +195,7 @@ nav a.active {
     margin-right: 10px;
     fill: currentColor;
 }
+
 /* hero */
 
 .hero {
@@ -267,11 +268,10 @@ nav a.active {
 
 .adv-list::before {
     content: '';
-    outline: 1px solid red;
     display: block;
+    border-radius: var(--main-border-radius);
 
     background-color: var(--portfolio-button-color);
-    background-size: contain;
     background-position: center;
 
     height: 120px;
@@ -280,7 +280,19 @@ nav a.active {
 }
 
 .icon-sat::before {
-    background-image: url(../images/icons.svg#icon-satellite);
+    background-image: url(../images/advico/sat.svg);
+}
+
+.icon-clock::before {
+    background-image: url(../images/advico/clock.svg);
+}
+
+.icon-diag::before {
+    background-image: url(../images/advico/diagram.svg);
+}
+
+.icon-astronaut::before {
+    background-image: url(../images/advico/astronaut.svg);
 }
 
 .visually-hidden {
